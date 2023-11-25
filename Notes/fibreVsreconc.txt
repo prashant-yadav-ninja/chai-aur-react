@@ -1,0 +1,18 @@
+
+It seems there might be a slight confusion in the terminology. I'll clarify.
+
+In the context of web development, especially in the React JavaScript library, "reconciliation" and "Fiber" refer to related but distinct concepts.
+
+Reconciliation:
+
+Reconciliation is the process by which React updates the user interface to match the most recent state.
+When your application's state changes, React needs to figure out what parts of the UI need to be updated to reflect that change.
+The reconciler is the part of React responsible for this process. It compares the new state with the previous state and determines the most efficient way to update the UI.
+Fiber:
+
+Fiber is an internal implementation detail of React's reconciler.
+It is essentially a reimplementation of the React core algorithm. It was introduced to make the process of reconciliation more incremental and interruptible.
+The goal of Fiber is to improve the performance and responsiveness of React applications, especially in cases where there are large and complex component trees.
+In simple terms, reconciliation is the broader concept of updating the UI based on state changes, and Fiber is a specific, more efficient way that React has implemented to carry out this reconciliation process.
+
+So, in summary, Fiber is a specific approach to reconciliation used internally by React. They are related concepts, but reconciliation is a broader term that encompasses the entire process, while Fiber is a specific implementation to make that process more efficient.
