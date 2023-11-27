@@ -8,28 +8,39 @@ function App() {
   // let counter = 15 ;
 
   function inc() {
-    if (counter <= 19) {
-      setCounter(counter + 1);
-      // console.log(counter);
-      // counter += 1 ;
-      // while (counter >= 0 && counter < 1 ){
+    // setCounter(counter+1)
+    // setCounter(counter+1)
+    // setCounter(counter+1)
+    // setCounter(counter+1)
+    setCounter( (prevCounter) => prevCounter+1 )
+    setCounter( (prevCounter) => prevCounter+1 )
+    setCounter( (prevCounter) => prevCounter+1 )
+    setCounter( (prevCounter) => prevCounter+1 )
 
-      // console.log('click inc ',counter);
-      // }
-    } else {
-      // counter = 0
-      setCounter(0);
-      // console.log(counter)
-    }
+    console.log(counter);
+    // if (counter <= 19) {
+    //   setCounter(counter + 1);
+    //   // console.log(counter);
+    //   // counter += 1 ;
+    //   // while (counter >= 0 && counter < 1 ){
+
+    //   // console.log('click inc ',counter);
+    //   // }
+    // } else {
+    //   // counter = 0
+    //   setCounter(0);
+    //   // console.log(counter)
+    // }
   }
 
   function dec() {
-    if (counter >= 1) {
-      setCounter(counter - 1);
-      // console.log(counter);
-      // counter -= 1 ;
-      console.log("click dec", counter);
-    }
+    setCounter(counter-1)
+    // if (counter >= 1) {
+    //   setCounter(counter - 1);
+    //   // console.log(counter);
+    //   // counter -= 1 ;
+    //   console.log("click dec", counter);
+    // }
   }
 
   return (
